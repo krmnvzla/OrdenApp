@@ -1,7 +1,11 @@
 <h1>MENU</h1>
 
 <div id="menu" class="center" data-toggle="buttons">
-	<label class="button-table btn btn-primary btn-lg" ng-repeat="t in tables(ntables)">
-		<input class="tablebtn" type="radio" name="tables" id="table{{$index + 1}}" value="{{$index + 1}} "> {{$index + 1}} 
-	</label>
+    <ul class="list-group">
+    	<li class="list-group-item" ng-repeat="plato in menu">
+            <h4 class="list-group-item-heading">{{plato.name}}<span class="badge pull-right">${{plato.price}}</span></h4>
+    		<p class="list-group-item-text">{{plato.description}}</p>
+        </li>
+      
+    </ul>
 </div>
