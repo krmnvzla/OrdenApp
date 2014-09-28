@@ -102,13 +102,18 @@ var ntable = 0;
         $scope.message = 'beer.';
     });
 
-    beerApp.controller('menuController', ['$scope','$http', function($scope) {
+    beerApp.controller('menuController', function($scope, $http) {
         $scope.message = 'Menu page.';
 
-        $http.get('javascript/menu.json').success (function(data){
-            $scope.menu = data;
-        }
-    }]);
+
+        $http.get('javascripts/menu.json')
+            .then(function(res){
+                $scope.mesas = res.data; 
+                console.log(res.data)               
+        });
+
+
+    });
 
     beerApp.controller('infoController', function($scope) {
         $scope.message = 'Contact us! JK. This is just a demo.';
