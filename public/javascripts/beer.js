@@ -52,25 +52,25 @@ var ntable = 0;
 
             // route for the table page
             .when('/', {
-                templateUrl : 'pages_beer/tables.html',
+                templateUrl : '/pages/tables.html',
                 controller  : 'tablesController'
             })
 
             // route for the beer button page
             .when('/beerbutton', {
-                templateUrl : 'pages_beer/beerbutton.html',
-                controller  : 'berrbuttonController'
+                templateUrl : '/pages/beerbutton.html',
+                controller  : 'berbuttonController'
             })
 
             // route for the menu page
-            .when('/info', {
-                templateUrl : 'pages_beer/menu.html',
+            .when('/menu', {
+                templateUrl : '/pages/menu.html',
                 controller  : 'menuController'
             })
 
             // route for the info page
             .when('/info', {
-                templateUrl : 'pages_beer/info.html',
+                templateUrl : '/pages/info.html',
                 controller  : 'infoController'
             });
     });
@@ -98,8 +98,12 @@ var ntable = 0;
 
     });
 
-    beerApp.controller('berrbuttonController', function($scope) {
-        $scope.message = 'Look! I am an about page.';
+    beerApp.controller('berbuttonController', function($scope) {
+        $scope.message = 'beer.';
+    });
+
+    beerApp.controller('menuController', function($scope) {
+        $scope.message = 'Menu page.';
     });
 
     beerApp.controller('infoController', function($scope) {
