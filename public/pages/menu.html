@@ -3,9 +3,15 @@
 <div id="menu" class="center" data-toggle="buttons">
     <ul class="list-group">
     	<li class="list-group-item" ng-repeat="plato in menu">
-            <h4 class="list-group-item-heading">{{plato.name}}<span class="badge pull-right">${{plato.price}}</span></h4>
-    		<p class="list-group-item-text">{{plato.description}}</p>
+    		<div class="row">
+    			<div class="col-lg-1">
+	    			<img src="images/75/{{plato.image}}" class="img-rounded">
+	    		</div>
+	    		<div>
+	    			<h4 class="list-group-item-heading">{{plato.name}}<span class="badge pull-right">${{plato.price}}</span></h4>
+	    			{{plato.description}}
+	    		</div>
+	    	</div>
         </li>
-      
     </ul>
 </div>
