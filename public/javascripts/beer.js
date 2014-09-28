@@ -105,7 +105,7 @@ var ntable = 0;
     beerApp.controller('menuController', ['$scope','$http', function($scope) {
         $scope.message = 'Menu page.';
 
-        $http.get('javascript/data.json').success (function(data){
+        $http.get('javascript/menu.json').success (function(data){
             $scope.menu = data;
         }
     }]);
