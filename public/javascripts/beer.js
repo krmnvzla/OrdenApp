@@ -108,7 +108,7 @@ var ntable = 0;
 
         $http.get('javascripts/menu.json')
             .then(function(res){
-                $scope.mesas = res.data; 
+                $scope.menu = res.data; 
                 console.log(res.data)               
         });
 
