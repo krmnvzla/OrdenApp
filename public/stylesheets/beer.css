@@ -24,7 +24,7 @@ body {
 }
 
   #bann{
-    background-image: url("../images/chelamx.png");
+    background-image: url("../images/bann.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -38,7 +38,7 @@ body {
   }
 
     #beerbutton{
-      background-image: url("../images/beernow.png");
+      background-image: url("../images/button.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -54,6 +54,7 @@ footer{
   position : fixed;
   bottom : 0;
   width: inherit;
+  background-color: #ff7c00;
 }
 
 .alert-success-order {
@@ -70,3 +71,14 @@ footer{
   margin: 0.25em;
   width: 3em;
 }
+
+.btnbottom{
+  color: #FFF;
+  background-color: #ff7c00
+}
+
+.btnbottom a:hover {
+  color: #FFF;
+  background-color: #FFA600
+}
+
