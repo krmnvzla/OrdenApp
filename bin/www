@@ -9,7 +9,9 @@ var server = app.listen(app.get('port'), function() {
   	console.log('Server listening on port: '+ server.address().port)
 });
 
-var io = require('socket.io').listen(server);
+const { Server } = require("socket.io");
+const io = new Server(server);
+
 require('../sockets/index')(io);
 require('../models');
 
